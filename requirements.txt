@@ -1,1 +1,1 @@
-# Core pipeline has zero pip dependencies; Python standard library is sufficient.
+# No third-party packages required for python3 Main.py.

@@ -1,13 +1,9 @@
 {
-  "seed": 25025,
-  "sizes": [32],
-  "threads": [2],
-  "ops": 300,
-  "repetitions": 2,
-  "stability_repetitions": 2,
-  "pause_us": [10],
-  "deadline_ms": 2000,
-  "timeout_seconds": 30,
-  "verification_sizes": [3],
-  "verification_max_states": 30000
+  "mode": "quick",
+  "size": 16,
+  "seeds": 2,
+  "e7_n": 6,
+  "max_exhaustive": 4096,
+  "seed_policy": "SHA-256-derived, local Python random.Random",
+  "runtime_note": "This is a deterministic pilot suite; no large-scale paper claims."
 }

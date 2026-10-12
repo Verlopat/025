@@ -1,10 +1,10 @@
-/build/
-/output/test*/
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .venv/
 .env
-*.log
+output/
+runs/
 *.egg-info/
-.idea/
-.vscode/
+dist/
+build/

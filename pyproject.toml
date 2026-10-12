@@ -1,8 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "saw-dsu-research"
-version = "0.1.0"
-description = "SAW-TSO deterministic CAS disjoint-set-union implementation and research experiments"
+name = "stabilizing-consensus-compiler"
+version = "1.0.0"
+description = "Executable restricted finite-certificate compiler for synchronous stabilizing consensus"
 requires-python = ">=3.10"
-license = {text = "MIT"}
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["sccompile*"]
