@@ -1,0 +1,8 @@
+[project]
+name = "saw-dsu-research"
+version = "0.1.0"
+description = "SAW-TSO deterministic CAS disjoint-set-union implementation and research experiments"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[tool.pytest.ini_options]
+testpaths = ["tests"]

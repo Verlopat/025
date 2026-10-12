@@ -1,0 +1,20 @@
+name: SAW-DSU checks
+on:
+  push:
+  pull_request:
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install compiler/build system
+        run: sudo apt-get update && sudo apt-get install -y ninja-build cmake g++
+      - name: Build and run native tests
+        run: |
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --parallel
+          ctest --test-dir build --output-on-failure
+      - name: Run Python regression tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Run integrated pilot without external checkers
+        run: python3 Main.py --no-external

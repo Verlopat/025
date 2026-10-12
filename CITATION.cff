@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the GitHub repository."
+title: "SAW-TSO Deterministic Concurrent Disjoint Set Union Research Implementation"
+type: software
+authors:
+  - name: "SAW-DSU Contributors"
+repository-code: "https://github.com/Verlopat/025"
+license: MIT
+version: 0.1.0
+date-released: 2026-10-12
